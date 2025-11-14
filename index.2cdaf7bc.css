@@ -1,0 +1,75 @@
+body, .header, .header-logo, .header_nav, .header-nav-list, .header-nav-item {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue-color: #00acdc;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  text-transform: uppercase;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 50px;
+  display: flex;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+}
+
+.header_nav .header-nav-list {
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.header_nav .header-nav-item + .header-nav-item {
+  margin-left: 20px;
+}
+
+.header-nav-link {
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 60px;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.header-nav-link:hover, .header-nav-link.is-active {
+  color: var(--blue-color);
+}
+
+.header-nav-link:after {
+  content: "";
+  background-color: var(--blue-color);
+  border-radius: 8px;
+  width: 0;
+  height: 4px;
+  transition: width .3s;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-nav-link.is-active:after {
+  width: 37px;
+}
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
