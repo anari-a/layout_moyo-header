@@ -1,4 +1,9 @@
-:where(*) {
+body,
+.header,
+.header-logo,
+.header_nav,
+.header-nav-list,
+.header-nav-item {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,18 +36,6 @@ body {
   margin-left: 50px;
 }
 
-@media (max-width: 1200px) {
-  .header_nav {
-    margin-left: 419px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .header_nav {
-    margin-left: 243px;
-  }
-}
-
 .header_nav .header-nav-list {
   display: flex;
   align-items: center;
@@ -62,10 +55,6 @@ body {
   font-size: 12px;
   line-height: 60px;
   position: relative;
-}
-
-.header-nav .header-nav-list {
-  height: 60px;
 }
 
 .header-nav-link:hover {
